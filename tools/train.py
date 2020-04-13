@@ -78,8 +78,7 @@ def train(config):
     config.save(os.path.join(config['model']['path'], config['save_conf_name']))
 
     # train and save weights to model_path
-    model.train(dataset_train, dataset_val, learning_rate=train_config.LEARNING_RATE,
-                epochs=config['model']['epochs'], layers='all')
+    model.train(dataset_train, dataset_val, learning_rate=train_config.LEARNING_RATE, epochs=config['model']['epochs'], layers='all')
 
     # save in the models folder
     current_datetime = time.strftime("%Y%m%d-%H%M%S")
