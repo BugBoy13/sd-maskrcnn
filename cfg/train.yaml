@@ -14,7 +14,7 @@ model:
     learning_rate: 0.01
 
 dataset:
-  path: /home/shantanu/wisdom-sim/
+  path: /content/datasets/wisdom/wisdom-sim
   train_indices: train_indices.npy
   val_indices: test_indices.npy
   images: depth_ims
